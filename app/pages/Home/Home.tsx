@@ -1,10 +1,8 @@
 import Image from "next/image";
 
 export default function Home() {
-  return (
-    
-      <div className="min-h-screen bg-gradient-to-b from-indigo-900 via-purple-900 to-blue-950 font-sans">
-          <main className="flex min-h-screen w-full items-center justify-center">
+    return(
+        <main className="flex min-h-screen w-full items-center justify-center">
             <Image
               src="/Logo.svg"
               alt="Ryoko logo"
@@ -12,6 +10,5 @@ export default function Home() {
               height={405}
             />
         </main>
-      </div>
-  );
+    );
 }
