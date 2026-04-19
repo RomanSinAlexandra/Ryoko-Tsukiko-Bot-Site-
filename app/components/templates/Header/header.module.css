@@ -1,0 +1,202 @@
+/* ===== HEADER ===== */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+
+  width: 100%;
+  height: 160px;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: rgba(32,32,32,0.75);
+}
+
+.logoWrapper {  
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logoImage {
+  box-shadow: 10px 5px 5px red;
+  height: 100%;
+  width: auto;
+}
+
+#rect:hover {
+    filter: url("#glow-filter");
+}
+
+.logoHover {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.logoHover:hover {
+  filter: drop-shadow(0 0 8px #C41F1F)
+          drop-shadow(0 0 16px #C41F1F);
+}
+
+/* чуть усиление при наведении */
+.logoHover:hover img {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+.chibiTrigger {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.2s ease;
+  z-index: 101; /* Чиби должна быть выше самого меню, чтобы закрывать его */
+}
+
+.chibiTrigger:hover {
+  transform: scale(1.05) rotate(5deg);
+  
+}
+
+.chibiTrigger:active {
+  transform: scale(0.95);
+}
+
+.nav {
+  display: flex;
+  gap: 60px;
+  font-size: 64px;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navLink:hover {
+  color: #C41F1F;
+}
+
+.mobileMenuButton {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 101;
+  transition: transform 0.2s ease;
+}
+
+/* Стили для десктопного Чиби */
+.desktopChibi {
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    height: 120px; /* Уменьшаем высоту хедера, 160px — много для 1200px */
+    padding: 0 30px; /* Сужаем боковые отступы */
+  }
+
+  .nav {
+    gap: 30px; /* Уменьшаем расстояние между ссылками */
+    font-size: 32px; /* Уменьшаем гигантский шрифт (был 64px) */
+  }
+
+  /* Уменьшаем размеры логотипа, чтобы навигация не вылетала */
+  .desktopChibi {
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  .logoText {
+    width: 160px !important;
+    height: auto !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Показываем кнопку на мобилках */
+  .mobileMenuButton {
+    display: block;
+  }
+
+  /* Скрываем Чиби, которая внутри ссылки логотипа (чтобы не было дублей) */
+  .desktopChibi {
+    display: none;
+  }
+
+  /* Уменьшаем текстовый логотип на мобилках */
+  .logoText {
+    width: 140px !important;
+    height: auto !important;
+  }
+
+.nav {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Спрятано */
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+      to bottom,
+      #312e81,
+      #581c87, 
+      #172554  
+    );
+
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    transition: right 0.4s ease;
+    z-index: 90;
+    overflow: hidden; /* Чтобы иконка не вылезала за границы, если она большая */
+}
+
+/* Добавляем MegatenMini.svg как фоновый элемент */
+.nav::before {
+    content: "";
+    position: absolute;
+    /* Центрируем иконку */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    /* Путь к иконке */
+    background-image: url("/MegatenMini.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    /* Настраиваем размер (например, 300px или используй clamp) */
+    width: clamp(800px, 60vw, 400px);
+    height: clamp(800px, 60vw, 400px);
+    
+    z-index: -1; /* Чтобы иконка была ПОД ссылками */
+    pointer-events: none; /* Чтобы иконка не мешала кликать по ссылкам */
+  }
+
+  @keyframes pulseGlow {
+  0% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  50% { opacity: 0.7; transform: translate(-50%, -50%) scale(1.05); }
+  100% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}
+
+.navActive::before {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+  .navActive {
+      right: 0 !important;
+  }
+}

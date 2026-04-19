@@ -1,0 +1,37 @@
+/* Главный контейнер всей страницы */
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центровка по горизонтали */
+  justify-content: center; /* Центровка по вертикали (если нужно) */
+  min-height: 80vh; /* Занимает почти всю высоту экрана */
+  padding: 40px 20px;
+  gap: 50px; /* Интервал между карточкой и кнопками соцсетей */
+}
+
+/* Контейнер для карточки */
+.commandPage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Контейнер для кнопок соцсетей */
+.socialButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px; /* Интервал между самими иконками */
+  flex-wrap: wrap; /* Чтобы на мобилках иконки переносились на вторую строку */
+}
+
+/* Адаптивность для мобилок */
+@media (max-width: 768px) {
+  .mainContainer {
+    gap: 30px;
+  }
+  
+  .socialButtons {
+    gap: 20px;
+  }
+}

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-import MainLayout from "./components/templates/MainLayout";
-import "./globals.module.css";
+import Image from "next/image";
+import Header from "./components/templates/Header/header";
+import Footer from "./components/templates/Footer/footer";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Ryoko Tsukiko",
@@ -15,8 +17,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <MainLayout>{children}</MainLayout>
+        <div className="background">
+          <Image
+            src="/Megaten.svg"
+            alt="Pentagram"
+            fill
+            className="bgImage"
+          />
+        </div>
+          <Header />
+            {children}
+          <Footer />
       </body>
     </html>
   );
 }
+
+

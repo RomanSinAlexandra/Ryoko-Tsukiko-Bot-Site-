@@ -1,0 +1,144 @@
+.main {
+  width: 100%;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; 
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 40px 20px;
+}
+
+.heroBg {
+  object-fit: cover;
+  z-index: 0;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  gap: 32px; 
+  width: 100%;
+}
+
+.heroLogo {
+  position: relative;
+  z-index: 2;
+  width: 100% !important;
+  height: auto !important;
+  max-width: 952px;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  min-height: 70vh;
+  padding: 0 5%;
+  margin-top: -5vw; 
+  z-index: 1;
+}
+
+.section:first-of-type {
+  margin-top: 0; 
+  position: relative;
+  top: 0;
+}
+
+.section:nth-child(2) { z-index: 2; }
+.section:nth-child(3) { z-index: 3; }
+.section:nth-child(4) { z-index: 4; }
+
+.imageWrapper {
+  position: relative;
+  width: 45%;
+  height: 700px;
+  z-index: 2; 
+}
+
+.contentWrapper {
+  width: 50%;
+  position: relative;
+  z-index: 1;
+}
+.characterImg {
+  object-fit: contain;
+  object-position: bottom;
+  width: 100% !important;
+  height: auto !important;
+  position: relative !important;
+}
+
+@media (max-width: 1400px) {
+  .section {
+    gap: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section {
+    flex-direction: column !important; 
+    margin-top: 0; 
+    min-height: auto;
+    text-align: center;
+  }
+
+  .imageWrapper {
+    height: 450px; 
+    order: 1; 
+    margin-bottom: -20px; 
+  }
+
+  .contentWrapper {
+    order: 2; 
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .imageWrapper {
+    height: 350px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    min-height: 600px;
+  }
+  
+  .heroLogo {
+    max-width: 700px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 500px;
+    padding-top: 80px;
+  }
+
+  .heroLogo {
+    max-width: 90%;
+  }
+
+  .heroContent {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroLogo {
+    max-width: 280px;
+  }
+}

@@ -1,0 +1,22 @@
+.textContainer {
+  /* Это самое важное: превращает обычные переносы в строке в визуальные разрывы */
+  white-space: pre-line; 
+  
+  text-align: left;
+  line-height: 1.5;
+  padding: 20px;
+  
+  /* Делаем область прокручиваемой, если команд слишком много */
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+/* Стилизация скроллбара, чтобы он не портил вид */
+.textContainer::-webkit-scrollbar {
+  width: 6px;
+}
+
+.textContainer::-webkit-scrollbar-thumb {
+  background: #5865EF;
+  border-radius: 10px;
+}

@@ -1,0 +1,154 @@
+.footerWrapper {
+  position: relative;
+  width: 100%;
+  min-height: 1081px;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 150px; 
+}
+
+.bgCity {
+  object-fit: cover;
+  z-index: 0;
+}
+
+.contentWrapper {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 40px;
+}
+
+.cardWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 696px;
+  aspect-ratio: 696 / 604; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cardBg {
+  position: absolute;
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  inset: 0;
+  z-index: 0;
+  object-fit: cover; 
+}
+
+.cardContent {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(10px, 2vw, 16px);
+  padding: clamp(20px, 4vw, 40px) clamp(16px, 3vw, 32px);
+}
+
+.cardLogo {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.cardText {
+  font-size: clamp(16px, 2.5vw, 38px); 
+  max-width: 696px;
+  text-align: center;
+  white-space: pre-line;
+  
+  line-height: 1.4; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ryoko {
+  width: 100%;
+  max-width: 621px;
+  display: flex;
+  justify-content: center;
+}
+
+.bottomBar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: clamp(60px, 10vw, 150px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(14px, 3vw, 40px);
+  background: black;
+  z-index: 30;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.cardLogo {
+
+  width: 100%; 
+  height: auto; 
+  max-width: 100%;
+  
+  padding: 0 10px; 
+  
+  display: block;
+  object-fit: contain;
+}
+
+@media (max-width: 1024px) {
+  .footerWrapper {
+    min-height: auto;
+    padding-top: 60px;
+  }
+
+  .contentWrapper {
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .cardWrapper {
+    aspect-ratio: auto;
+    min-height: 400px;
+  }
+
+  .ryoko {
+    max-width: 70%;
+  }
+
+  .cardLogo {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footerWrapper {
+    padding-bottom: 80px;
+  }
+
+  .ryoko {
+    max-width: 90%;
+  }
+
+  .cardLogo {
+    max-width: 95%;
+    margin-bottom: 10px;
+  }
+
+  .cardText {
+    white-space: normal; 
+  }
+}

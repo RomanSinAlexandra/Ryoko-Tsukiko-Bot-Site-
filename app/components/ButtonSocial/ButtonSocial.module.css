@@ -1,0 +1,66 @@
+.link {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+    outline: none;
+}
+
+.icon {
+    width: clamp(48px, 15vw, 250px);
+    height: clamp(48px, 15vw, 250px);
+    
+    background-color: white;
+    
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
+
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover .icon {
+    background-color: #C41F1F;
+    filter: drop-shadow(0 0 10px rgba(196, 31, 31, 0.6));
+}
+
+.button:active {
+    transform: scale(0.9);
+}
+
+@media (max-width: 1024px) {
+    .icon {
+        width: clamp(40px, 12vw, 150px);
+        height: clamp(40px, 12vw, 150px);
+    }
+}
+
+@media (max-width: 768px) {
+    .button {
+        padding: 5px;
+    }
+    
+    .icon {
+        width: 60px; 
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .icon {
+        width: 45px;
+        height: 45px;
+    }
+}
