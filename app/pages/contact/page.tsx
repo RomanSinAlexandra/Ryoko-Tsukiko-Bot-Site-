@@ -3,7 +3,7 @@ import ButtonSocial from "../../components/ButtonSocial/ButtonSocial";
 import styles from "./Contact.module.css";
 
 export default function Contact() {
-  const commandsText = `Lorem ipsum dolor sit amet consectetur. Est faucibus sit scelerisque semper. Nam ultrices et quis pellentesque elementum a in. Cursus libero montes amet eleifend nunc. Fringilla iaculis justo non nullam senectus pretium sollicitudin. Sit nibh mattis leo vivamus. Magna dictum mattis viverra sed sem elit tristique. Sed mattis orci tristique vitae adipiscing feugiat odio. Arcu molestie adipiscing elit lobortis habitasse rhoncus amet elementum nullam. Proin malesuada facilisis consectetur imperdiet urna ornare.`;
+  const commandsText = `We are currently in the development stage of our project, and we are actively working on creating an amazing experience for our users. We appreciate your interest and support! Please follow our website and social media channels for updates on all news and releases. We can't wait to share our progress with you!`;
 
   return (
     // Добавляем стили для главного контейнера
