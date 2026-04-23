@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig = {
   output: 'export', 
-  basePath: '/your-repo-name',
+  basePath: '/Ryoko-Tsukiko-Bot-Site-',
   images: {
     unoptimized: true,
   },
