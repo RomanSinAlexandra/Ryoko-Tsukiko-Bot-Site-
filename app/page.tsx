@@ -8,7 +8,7 @@ export default function Home() {
           <main className={styles.main}>
             <div className={styles.hero}>
               <Image
-                src="/Logobg.svg"
+                src="/Ryoko-Tsukiko-Bot-Site-/Logobg.svg"
                 alt="Logo background"
                 fill
                 className={styles.heroBg}
@@ -16,7 +16,7 @@ export default function Home() {
               />
               <div className={styles.heroContent}>
                 <Image
-                  src="/Logo.svg"
+                  src="/Ryoko-Tsukiko-Bot-Site-/Logo.svg"
                   alt="Ryoko logo"
                   width={952}
                   height={405}
@@ -31,7 +31,7 @@ export default function Home() {
                 <div className={styles.section}>
                   <div className={styles.imageWrapper}>
                     <Image 
-                      src="/RyokoSchool.svg" 
+                      src="/Ryoko-Tsukiko-Bot-Site-/RyokoSchool.svg" 
                       alt="Ryoko anime" 
                       fill 
                       priority
@@ -60,7 +60,7 @@ export default function Home() {
                   
                   <div className={styles.imageWrapper}>
                     <Image 
-                      src="/RyokoSinger.svg" 
+                      src="/Ryoko-Tsukiko-Bot-Site-/RyokoSinger.svg" 
                       alt="Ryoko singer" 
                       fill 
                       priority
@@ -71,7 +71,7 @@ export default function Home() {
                   <div className={styles.section}>
                      <div className={styles.imageWrapper}>
                         <Image 
-                          src="/RyokoArima.svg" 
+                          src="/Ryoko-Tsukiko-Bot-Site-/RyokoArima.svg" 
                           alt="Ryoko art" 
                           fill 
                           priority
@@ -101,7 +101,7 @@ export default function Home() {
 
                     <div className={styles.imageWrapper}>
                       <Image 
-                        src="/RyokoPiper.svg" 
+                        src="/Ryoko-Tsukiko-Bot-Site-/RyokoPiper.svg" 
                         alt="Ryoko news" 
                         fill 
                         priority

@@ -19,7 +19,7 @@ export default function RootLayout({
       <body>
         <div className="background">
           <Image
-            src="/Megaten.svg"
+            src="/Ryoko-Tsukiko-Bot-Site-/Megaten.svg"
             alt="Pentagram"
             fill
             className="bgImage"

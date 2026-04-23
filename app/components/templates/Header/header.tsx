@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./header.module.css";
 
 export default function Header() {
@@ -11,27 +12,24 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      {/* Логотип: на десктопе это ссылка, на мобилках Чиби внутри скроется */}
       <a href="/" className={styles.logoHover}>
-        <Image src="/RyokoChibi.svg" alt="Ryoko" width={100} height={100} className={styles.desktopChibi} />
-        <Image src="/RyokoText.svg" alt="Text" width={200} height={80} className={styles.logoText} />
+        <Image src="/Ryoko-Tsukiko-Bot-Site-/RyokoChibi.svg" alt="Ryoko" width={100} height={100} className={styles.desktopChibi} />
+        <Image src="/Ryoko-Tsukiko-Bot-Site-/RyokoText.svg" alt="Text" width={200} height={80} className={styles.logoText} />
       </a>
 
-      {/* Кнопка-бургер: видна ТОЛЬКО на мобилках */}
       <button 
         className={styles.mobileMenuButton} 
         onClick={toggleMenu} 
         aria-label="Toggle menu"
       >
-        <Image src="/RyokoChibi.svg" alt="Menu" width={100} height={100} />
+        <Image src="/Ryoko-Tsukiko-Bot-Site-/RyokoChibi.svg" alt="Menu" width={100} height={100} />
       </button>
 
-      {/* Навигация */}
       <nav className={`${styles.nav} ${isMenuOpen ? styles.navActive : ""}`}>
-        <a href="/" className={styles.navLink} onClick={closeMenu}>Home</a>
-        <a href="/pages/command" className={styles.navLink} onClick={closeMenu}>Command</a>
-        <a href="/pages/api" className={styles.navLink} onClick={closeMenu}>API</a>
-        <a href="/pages/contact" className={styles.navLink} onClick={closeMenu}>Contact</a>
+        <Link href="/" className={styles.navLink} onClick={closeMenu}>Home</Link>
+        <Link href="/pages/command" className={styles.navLink} onClick={closeMenu}>Command</Link>
+        <Link href="/pages/api" className={styles.navLink} onClick={closeMenu}>API</Link>
+        <Link href="/pages/contact" className={styles.navLink} onClick={closeMenu}>Contact</Link>
       </nav>
     </header>
   );

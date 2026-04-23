@@ -10,7 +10,7 @@ export default function footer () {
 <footer className={styles.footerWrapper}>
 
         <Image
-          src="/bgCity.svg"
+          src="/Ryoko-Tsukiko-Bot-Site-/bgCity.svg"
           alt="City"
           fill
           className={styles.bgCity}
@@ -20,7 +20,7 @@ export default function footer () {
 
           <div className={styles.cardWrapper}>
             <Image
-              src="/bgText.svg"
+              src="/Ryoko-Tsukiko-Bot-Site-/bgText.svg"
               alt="bg"
               fill
               className={styles.cardBg}
@@ -29,7 +29,7 @@ export default function footer () {
             <div className={`${styles.cardContent} ${styles.text}`}>
 
               <Image
-                src="/RyokoTsukikoLogo.svg"
+                src="/Ryoko-Tsukiko-Bot-Site-/RyokoTsukikoLogo.svg"
                 alt="Logo"
                 width={696}
                 height={168}
@@ -53,7 +53,7 @@ export default function footer () {
 
           <div className={styles.ryoko}>
             <Image 
-              src="/Ryoko.svg" 
+              src="/Ryoko-Tsukiko-Bot-Site-/Ryoko.svg" 
               alt="Ryoko" 
               width={621} 
               height={931}

@@ -22,22 +22,22 @@ export default function Contact() {
         <ButtonSocial 
           title="Discord"
           href="https://discord.gg/bxJYk74duw"
-          iconPath="/discord-icon.svg" 
+          iconPath="/Ryoko-Tsukiko-Bot-Site-/discord-icon.svg" 
         />
         <ButtonSocial 
           title="Telegram"
           href="https://t.me/Ichigo_Project"
-          iconPath="/telegram-icon.svg" 
+          iconPath="/Ryoko-Tsukiko-Bot-Site-/telegram-icon.svg" 
         />
         <ButtonSocial 
           title="Instagram"
           href="https://www.instagram.com/roman_prokopenko_son_alexander?igsh=NjM5Mm0yOWdiYng5"
-          iconPath="/instagram-icon.svg" 
+          iconPath="/Ryoko-Tsukiko-Bot-Site-/instagram-icon.svg" 
         />
         <ButtonSocial 
           title="Youtube"
           href="https://www.youtube.com/@Roman_Prokopenko_son_Alexander"
-          iconPath="/youtube-icon.svg" 
+          iconPath="/Ryoko-Tsukiko-Bot-Site-/youtube-icon.svg" 
         />
       </div>
 
