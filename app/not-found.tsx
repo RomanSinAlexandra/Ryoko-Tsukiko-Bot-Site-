@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import Lottie from 'lottie-react';
 import styles from './PageNotFound.module.css';
+import Button from './components/Button/Button';
 import ryokoAnimation from '@/public/ryoko.json';
 
 export default function NotFound() {
@@ -18,11 +19,9 @@ export default function NotFound() {
       <div>
         <h1 className={styles.title}>404</h1>
         <p className={styles.description}>
-          Ой! Похоже, Рёко не смогла найти эту страницу.
+          Oops! Looks like Ryoko couldn't find this page.
         </p>
-        <Link href="/" className={styles.button}>
-          Вернуться домой
-        </Link>
+        <Button title="Back to Home" href="/" />
       </div>
     </div>
   );

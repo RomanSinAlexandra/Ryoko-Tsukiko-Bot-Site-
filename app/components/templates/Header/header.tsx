@@ -12,10 +12,10 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <a href="/" className={styles.logoHover}>
+      <Link href="/" className={styles.logoHover}>
         <Image src="/Ryoko-Tsukiko-Bot-Site-/RyokoChibi.svg" alt="Ryoko" width={100} height={100} className={styles.desktopChibi} />
         <Image src="/Ryoko-Tsukiko-Bot-Site-/RyokoText.svg" alt="Text" width={200} height={80} className={styles.logoText} />
-      </a>
+      </Link>
 
       <button 
         className={styles.mobileMenuButton} 
