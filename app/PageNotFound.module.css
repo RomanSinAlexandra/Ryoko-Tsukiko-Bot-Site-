@@ -42,9 +42,10 @@
 
 /* АДАПТИВ ПОД ТЕЛЕФОНЫ */
 @media (max-width: 768px) {
-  .image {
+.image {
     width: 200px;
     height: 200px;
+    margin-bottom: 40px;
   }
 
   .title {
