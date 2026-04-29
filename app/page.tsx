@@ -30,7 +30,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.hero}>
           <video
-            src="/animation/Animate-Background.webm"
+            src="/Animation/Animate-Background.webm"
             className={styles.heroBg}
             autoPlay
             loop
