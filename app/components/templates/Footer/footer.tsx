@@ -6,67 +6,69 @@ import styles from "./footer.module.css";
 export default function footer () {
 
 
-  return (
-<footer className={styles.footerWrapper}>
+return (
+    <footer className={styles.footerWrapper}>
 
-        <Image
-          src="/Ryoko-Tsukiko-Bot-Site-/bgCity.svg"
-          alt="City"
-          fill
-          className={styles.bgCity}
-        />
-
-        <div className={styles.contentWrapper}>
-
-          <div className={styles.cardWrapper}>
-            <Image
-              src="/Ryoko-Tsukiko-Bot-Site-/bgText.svg"
-              alt="bg"
-              fill
-              className={styles.cardBg}
+            <video
+              src="/Ryoko-Tsukiko-Bot-Site-/animation/bgCity.webm"
+              className={styles.bgCity}
+              autoPlay
+              loop
+              muted
+              playsInline
             />
 
-            <div className={`${styles.cardContent} ${styles.text}`}>
+            <div className={styles.contentWrapper}>
 
-              <Image
-                src="/Ryoko-Tsukiko-Bot-Site-/RyokoTsukikoLogo.svg"
-                alt="Logo"
-                width={696}
-                height={168}
-                className={styles.cardLogo}
-                priority
-              />
+              <div className={styles.cardWrapper}>
+                <Image
+                  src="/Ryoko-Tsukiko-Bot-Site-/bgText.svg"
+                  alt="bg"
+                  fill
+                  className={styles.cardBg}
+                />
 
-              <div className={styles.cardText}>
-                {`Ryouko Tsukiko
-                Yes, I really am like this.
-                No, I'm not joking.
-                Yes, the bow is mandatory even at
-                3 a.m.
-                No, I'm not tired of repeating
-                myself.
-                ...One more time?`}
+                <div className={`${styles.cardContent} ${styles.text}`}>
+
+                  <Image
+                    src="/Ryoko-Tsukiko-Bot-Site-/RyokoTsukikoLogo.svg"
+                    alt="Logo"
+                    width={696}
+                    height={168}
+                    className={styles.cardLogo}
+                    priority
+                  />
+
+                  <div className={styles.cardText}>
+                    {`Ryouko Tsukiko
+                    Yes, I really am like this.
+                    No, I'm not joking.
+                    Yes, the bow is mandatory even at
+                    3 a.m.
+                    No, I'm not tired of repeating
+                    myself.
+                    ...One more time?`}
+                  </div>
+
+                </div>
               </div>
 
+              <div className={styles.ryoko}>
+                <Image 
+                  src="/Ryoko-Tsukiko-Bot-Site-/Ryoko.svg" 
+                  alt="Ryoko" 
+                  width={621} 
+                  height={931}
+                  priority
+                  style={{ width: '100%', height: 'auto' }} 
+                />
+              </div>
             </div>
-          </div>
 
-          <div className={styles.ryoko}>
-            <Image 
-              src="/Ryoko-Tsukiko-Bot-Site-/Ryoko.svg" 
-              alt="Ryoko" 
-              width={621} 
-              height={931}
-              priority
-              style={{ width: '100%', height: 'auto' }} 
-            />
-          </div>
-        </div>
+            <div className={`${styles.bottomBar} ${styles.text}`}>
+              © 2026 Ryoko Tsukiko. Created with love.
+            </div>
 
-        <div className={`${styles.bottomBar} ${styles.text}`}>
-          © 2026 Ryoko Tsukiko. Created with love.
-        </div>
-
-      </footer>
+    </footer>
   );
 }

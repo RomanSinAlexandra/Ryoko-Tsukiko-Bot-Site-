@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import styles from "./ButtonSocial.module.css";
+import { useSound } from "@/hooks/useSound";
 
 interface ButtonSocialProps {
   title: string;
@@ -9,10 +11,22 @@ interface ButtonSocialProps {
 }
 
 const ButtonSocial = ({ title, iconPath, onClick, href }: ButtonSocialProps) => {
+
+  const prefix = '/Ryoko-Tsukiko-Bot-Site-';
+  const { playHover, playClick } = useSound();
+
+  const fullIconPath = iconPath.startsWith('http') ? iconPath : `${prefix}${iconPath}`;
+
+  const handleClick = (e: React.MouseEvent) => {
+    playClick();
+    if (onClick) onClick();
+  };
+
   const content = (
     <button 
       className={styles.button} 
-      onClick={onClick} 
+      onMouseEnter={playHover}
+      onClick={handleClick} 
       title={title}
       aria-label={title}
     >

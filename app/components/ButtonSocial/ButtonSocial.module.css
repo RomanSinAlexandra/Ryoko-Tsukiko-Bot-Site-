@@ -32,8 +32,8 @@
 }
 
 .button:hover .icon {
-    background-color: #C41F1F;
-    filter: drop-shadow(0 0 10px rgba(196, 31, 31, 0.6));
+    background-color: #fffd5d;
+    filter: drop-shadow(0 0 10px rgba(255, 253, 93, 0.6));
 }
 
 .button:active {

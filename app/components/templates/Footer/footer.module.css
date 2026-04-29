@@ -1,7 +1,7 @@
 .footerWrapper {
   position: relative;
   width: 100%;
-  min-height: 1081px;
+  min-height: 100vh; /* Используем высоту экрана для гибкости */
   height: auto;
   overflow: hidden;
   display: flex;
@@ -10,14 +10,20 @@
   padding-bottom: 150px; 
 }
 
+/* Видео теперь ведет себя как фон */
 .bgCity {
-  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Заполняет всё пространство без искажений */
   z-index: 0;
 }
 
 .contentWrapper {
   position: relative;
-  z-index: 10;
+  z-index: 10; /* Контент всегда выше видео */
   width: 100%;
   max-width: 1600px;
   display: flex;
@@ -27,6 +33,18 @@
   gap: 40px;
 }
 
+/* Объединяем стили логотипа в один блок */
+.cardLogo {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  padding: 0 10px;
+  display: block;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+/* Оптимизация карточки */
 .cardWrapper {
   position: relative;
   width: 100%;
@@ -118,6 +136,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 20px;
+    gap: 20px;
   }
 
   .cardWrapper {
@@ -130,7 +149,7 @@
   }
 
   .cardLogo {
-    max-width: 80%;
+    max-width: 80%; /* Сжимаем логотип на планшетах */
   }
 }
 
@@ -145,7 +164,6 @@
 
   .cardLogo {
     max-width: 95%;
-    margin-bottom: 10px;
   }
 
   .cardText {
