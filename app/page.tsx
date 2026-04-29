@@ -4,7 +4,7 @@ import Image from "next/image";
 import TextCard from "./components/TextCard/TextCard";
 import Button from "./components/Button/Button";
 import styles from "./Page.module.css";
-import { useSound } from "@/hooks/useSound";
+import { useSound } from "../hooks/useSound";
 
 export default function Home() {
   const [isFlashing, setIsFlashing] = useState(true); // Вспышка активна сразу
