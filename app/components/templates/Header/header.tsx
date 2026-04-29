@@ -37,8 +37,8 @@ export default function Header() {
         onMouseEnter={playHover} 
         onClick={playClick}
       >
-        <Image src="/Ryoko-Tsukiko-Bot-Site-/RyokoChibi.svg" alt="Ryoko" width={100} height={100} className={styles.desktopChibi} />
-        <Image src="/Ryoko-Tsukiko-Bot-Site-/RyokoText.svg" alt="Text" width={200} height={80} className={styles.logoText} />
+        <Image src="/RyokoChibi.svg" alt="Ryoko" width={100} height={100} className={styles.desktopChibi} />
+        <Image src="/RyokoText.svg" alt="Text" width={200} height={80} className={styles.logoText} />
       </Link>
 
       <button 
@@ -47,7 +47,7 @@ export default function Header() {
         onMouseEnter={playHover}
         aria-label="Toggle menu"
       >
-        <Image src="/Ryoko-Tsukiko-Bot-Site-/RyokoChibi.svg" alt="Menu" width={100} height={100} />
+        <Image src="/RyokoChibi.svg" alt="Menu" width={100} height={100} />
       </button>
 
       <nav className={`${styles.nav} ${isMenuOpen ? styles.navActive : ""}`}>

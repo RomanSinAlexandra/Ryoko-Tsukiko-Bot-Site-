@@ -10,7 +10,7 @@ return (
     <footer className={styles.footerWrapper}>
 
             <video
-              src="/Ryoko-Tsukiko-Bot-Site-/animation/bgCity.webm"
+              src="/animation/bgCity.webm"
               className={styles.bgCity}
               autoPlay
               loop
@@ -22,7 +22,7 @@ return (
 
               <div className={styles.cardWrapper}>
                 <Image
-                  src="/Ryoko-Tsukiko-Bot-Site-/bgText.svg"
+                  src="/bgText.svg"
                   alt="bg"
                   fill
                   className={styles.cardBg}
@@ -31,7 +31,7 @@ return (
                 <div className={`${styles.cardContent} ${styles.text}`}>
 
                   <Image
-                    src="/Ryoko-Tsukiko-Bot-Site-/RyokoTsukikoLogo.svg"
+                    src="/RyokoTsukikoLogo.svg"
                     alt="Logo"
                     width={696}
                     height={168}
@@ -55,7 +55,7 @@ return (
 
               <div className={styles.ryoko}>
                 <Image 
-                  src="/Ryoko-Tsukiko-Bot-Site-/Ryoko.svg" 
+                  src="/Ryoko.svg" 
                   alt="Ryoko" 
                   width={621} 
                   height={931}

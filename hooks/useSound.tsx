@@ -1,11 +1,9 @@
 "use client";
 import { useEffect } from "react";
 
-const prefix = '/Ryoko-Tsukiko-Bot-Site-';
-
 export const useSound = () => {
   const playSound = (soundPath: string) => {
-    const fullPath = `${prefix}${soundPath}`;
+    const fullPath = `${soundPath}`;
     try {
       const audio = new Audio(fullPath);
       audio.volume = 0.3;

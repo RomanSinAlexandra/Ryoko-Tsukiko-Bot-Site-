@@ -30,7 +30,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.hero}>
           <video
-            src="/Ryoko-Tsukiko-Bot-Site-/animation/Animate-Background.webm"
+            src="/animation/Animate-Background.webm"
             className={styles.heroBg}
             autoPlay
             loop
@@ -39,7 +39,7 @@ export default function Home() {
           />
           <div className={styles.heroContent}>
             <Image
-              src="/Ryoko-Tsukiko-Bot-Site-/Logo.svg"
+              src="/Logo.svg"
               alt="Ryoko logo"
               width={952}
               height={405}
@@ -54,7 +54,7 @@ export default function Home() {
           <div className={styles.section}>
             <div className={styles.imageWrapper}>
               <Image 
-                src="/Ryoko-Tsukiko-Bot-Site-/RyokoSchool.svg" 
+                src="/RyokoSchool.svg" 
                 alt="Ryoko anime" 
                 fill 
                 priority
@@ -81,7 +81,7 @@ export default function Home() {
             </div>
             <div className={styles.imageWrapper}>
               <Image 
-                src="/Ryoko-Tsukiko-Bot-Site-/RyokoSinger.svg" 
+                src="/RyokoSinger.svg" 
                 alt="Ryoko singer" 
                 fill 
                 priority
@@ -92,7 +92,7 @@ export default function Home() {
           <div className={styles.section}>
             <div className={styles.imageWrapper}>
               <Image 
-                src="/Ryoko-Tsukiko-Bot-Site-/RyokoArima.svg" 
+                src="/RyokoArima.svg" 
                 alt="Ryoko art" 
                 fill 
                 priority
@@ -119,7 +119,7 @@ export default function Home() {
             </div>
             <div className={styles.imageWrapper}>
               <Image 
-                src="/Ryoko-Tsukiko-Bot-Site-/RyokoPiper.svg" 
+                src="/RyokoPiper.svg" 
                 alt="Ryoko news" 
                 fill 
                 priority
