@@ -10,7 +10,7 @@ return (
     <footer className={styles.footerWrapper}>
 
             <video
-              src="/animation/bgCity.webm"
+              src="/Animation/bgCity.webm"
               className={styles.bgCity}
               autoPlay
               loop
