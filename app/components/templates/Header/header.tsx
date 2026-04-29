@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./header.module.css";
-import { useSound } from "@/hooks/useSound";
+import { useSound } from "../../../../hooks/useSound";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

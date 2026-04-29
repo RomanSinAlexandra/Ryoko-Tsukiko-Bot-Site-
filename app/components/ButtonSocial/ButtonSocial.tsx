@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import styles from "./ButtonSocial.module.css";
-import { useSound } from "@/hooks/useSound";
+import { useSound } from "../../../hooks/useSound";
 
 interface ButtonSocialProps {
   title: string;

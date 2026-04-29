@@ -1,6 +1,6 @@
 "use client";
 import styles from "./Button.module.css";
-import { useSound } from "@/hooks/useSound";
+import { useSound } from "../../../hooks/useSound";
 
 interface ButtonProps {
   title: string;
