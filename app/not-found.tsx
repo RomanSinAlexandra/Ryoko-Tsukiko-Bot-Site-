@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Lottie from 'lottie-react';
 import styles from './PageNotFound.module.css';
 import Button from './components/Button/Button';
-import ryokoAnimation from '../public/animation/ryoko.json';
+import ryokoAnimation from './animation/ryoko.json';
 
 export default function NotFound() {
   return (
